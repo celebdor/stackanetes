@@ -120,6 +120,13 @@ kolla-k8s --debug
 ```
 ## Deploy Stackanetes via stackanetes-deployer POD
 
+First you have to build the stackanetes-deployer image. In order to do that,
+simply run the following command from the root of this repository:
+
+```
+docker build -t stackanetes-deployer .
+```
+
 To install Stackanetes vis stackanetes-deployer POD you still have to label your nodes
 and finish `Final host dependencies` step.
 
